@@ -15,8 +15,6 @@ webroot
 node_modules
 logs
 
-credentials
-
 forecast/microservice.yaml
 forecast/lib
 
@@ -28,3 +26,4 @@ weather-beta/lib
 
 fusionweather/microservice.yaml
 fusionweather/lib
+/credentials
