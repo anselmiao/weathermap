@@ -35,6 +35,11 @@ echo     secretKey: %sk%>> microservice.yaml
 echo     akskCustomCipher: %akskCustomCipher%>> microservice.yaml
 echo     project: %project%>> microservice.yaml
 
+REM  addressResolver:   ## windows下，域名无法解析，可配置addressResolver
+REM    servers: 8.8.8.8
+echo addressResolver: >> microservice.yaml
+echo   servers: 114.114.114.114 >> microservice.yaml
+
 REM read httpproxy properties
 if not exist "httpproxy.properties" goto nohttpproxy
 for /f "tokens=1,2 delims==" %%i in (httpproxy.properties) do (
